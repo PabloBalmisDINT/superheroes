@@ -28,7 +28,7 @@ namespace superheroes
             DockPanelPrincipal.DataContext = superheroe;
         }
 
-        private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) //click en la flecha para pasar al siguiente
+        private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) //click en las flechas para cambiar entre superheroes
         {
             if(superHeroeActual != 2)
             {
