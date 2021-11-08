@@ -39,7 +39,7 @@
                        Visibility="{Binding  Path=Xmen, Converter={StaticResource conversorlogo}}"></Image>
             </StackPanel>
         </DockPanel>
-        <!--Parte de abajo con las flechas y el numero de la imagen-->
+        <!--Parte de abajo con las flechas y el numero del superheroe-->
         <StackPanel DockPanel.Dock="Bottom"
                     HorizontalAlignment="Center"
                     Orientation="Horizontal">

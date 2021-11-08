@@ -12,8 +12,7 @@ namespace superheroes
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            bool heroe = (bool)value;
-            if (heroe)
+            if ((bool)value)
             {
                 return "PaleGreen";
             }
