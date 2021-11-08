@@ -18,6 +18,8 @@
 
     <DockPanel x:Name="DockPanelPrincipal"
                Background="{Binding Path=Heroe, Converter={StaticResource conversorColor}}">
+        
+        <!--Parte de arriba con el nombre y los logos-->
         <DockPanel DockPanel.Dock="Top"
                    LastChildFill="False">
             <TextBlock DockPanel.Dock="Left"
@@ -37,6 +39,7 @@
                        Visibility="{Binding  Path=Xmen, Converter={StaticResource conversorlogo}}"></Image>
             </StackPanel>
         </DockPanel>
+        <!--Parte de abajo con las flechas y el numero de la imagen-->
         <StackPanel DockPanel.Dock="Bottom"
                     HorizontalAlignment="Center"
                     Orientation="Horizontal">
@@ -63,6 +66,7 @@
                 </Image.RenderTransform>
             </Image>
         </StackPanel>
+        <!--Imagen del superheroe-->
         <Image Source="{Binding Path=Imagen}"
                Stretch="UniformToFill"
                Margin="5"></Image>

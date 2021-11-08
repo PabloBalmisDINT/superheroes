@@ -20,7 +20,7 @@ namespace superheroes
             }
             else
             {
-                return "Hidden";
+                return "Collapsed";
             }
         }
 
