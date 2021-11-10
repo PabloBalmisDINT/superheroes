@@ -21,6 +21,7 @@ namespace superheroes
     public partial class MainWindow : Window
     {
         Superheroe superheroe = Superheroe.GetSamples()[0];
+        int numeroSuperheroes = Superheroe.GetSamples().Count;
         int superHeroeActual = 0;
         public MainWindow()
         {
@@ -30,7 +31,7 @@ namespace superheroes
 
         private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) //click en las flechas para cambiar entre superheroes
         {
-            if(superHeroeActual != 2)
+            if(superHeroeActual < numeroSuperheroes-1)
             {
                 superHeroeActual++;
                 DockPanelPrincipal.DataContext = Superheroe.GetSamples()[superHeroeActual];
